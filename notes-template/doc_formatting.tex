@@ -1,0 +1,28 @@
+\addtokomafont{caption}{\small}
+%\setkomafont{descriptionlabel}{\normalfont
+%	\bfseries}
+\setkomafont{captionlabel}{\normalfont
+	\bfseries}
+\let\oldtabular\tabular
+\renewcommand{\tabular}{\sffamily\oldtabular}
+\KOMAoptions{abstract=true}
+%\setkomafont{footnote}{\sffamily}
+%\KOMAoptions{twoside=true}
+%\KOMAoptions{headsepline=true}
+%\KOMAoptions{footsepline=true}
+\renewcommand\familydefault{\sfdefault}
+\renewcommand{\arraystretch}{1.1}
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}}
+\setlength{\textheight}{230mm}
+\allsectionsfont{\centering \normalfont\scshape}
+\let\tmp\oddsidemargin
+\let\oddsidemargin\evensidemargin
+\let\evensidemargin\tmp
+\reversemarginpar
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+\setlength\parindent{0pt}
+

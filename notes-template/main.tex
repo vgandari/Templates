@@ -1,0 +1,44 @@
+%\title{Notes Template}
+
+%GUDELINES
+%Create a folder for each problem with modules for each problem.
+%This will allow for repetition of file names that already exist in the template.
+%Keep prefixes to make naming section files more flexible.
+
+\input{./doc_notes_header.tex}
+\input{./doc_heading_info.tex}
+\input{./doc_formatting.tex}
+
+\begin{document}
+\input{./doc_more_formatting.tex}
+
+%ABSTRACT
+\input{./general/abs_summary.tex}
+
+%BODY
+\section{Topic/Problem}
+\input{./problem/modules/mot_motivation.tex}
+\input{./problem/modules/obj_objective.tex}
+\input{./problem/modules/giv_conditions.tex}
+\input{./problem/modules/tab_assumptions.tex}
+
+\subsection{Solution}
+\input{./problem/modules/der_derivation.tex}
+\input{./problem/modules/exm_takeoff.tex}
+\input{./problem/modules/mre_main_result.tex}
+
+\subsection{Analysis}
+\input{./problem/modules/res_results.tex}
+\input{./problem/modules/con_conclusions.tex}
+
+\section{Questions/Future Work}
+\input{./problem/modules/Qa_questions.tex}
+\input{./problem/modules/QA_questions_and_answers.tex}
+
+\appendix
+\section{Reference}
+
+\subsection{Proofs}
+%\input{./problem/modules/prf_theorem.tex}
+\input{./problem/modules/jor_journal.tex}
+\end{document}

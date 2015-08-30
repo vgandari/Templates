@@ -9,36 +9,63 @@ Conventions
 
 Follow file naming convention in each module template listed below
 Use prefixes for file names listed below, followed by the topic
-Use \include{} to include files that call files by \input{}
+Use \include{} to include files that call files by \input{} and when page break is desired (e.g. chapters)
 Files meant to be called with \input{} should not call a second file.
 Keep a list of unique equation, figure, and chapter/section headers.
 
 File Naming Convention
 ----------------------
 
-Prefixes:
+File Prefixes:
+
+### Section/Layout (Main Matter)
+
++ chp - chapter
++ sec - section
++ sub - subsction
++ sol - solution
++ res - results
++ con - conclusions
+
+### Content
+
+
++ ftn - footnote
++ sdn - sidenote (depending on layout?)
++ lis - list
++ cod - code listing (with language name as suffix)
++ fig - figure
++ tab - table
++ frm - presentation slide (frame)
++ exm - example
+
+
++ ref - reference (to be cited)
++ Qa_ - unanswered question
++ QA_ - question with answer
+
+### Math
 
 + mot - motivation
 + obj - objective
++ giv - given information, initial/boundary conditions
 + def - definition
++ prt - properties
 + der - derivation
-+ eqn - equation
 + prb - problem in standard form
 + thm - theorem
 + lem - lemma with corresponding theorem(s) in file name
 + cor - corollary with corresponding theorem(s) in file name
-+ prf - proof
++ eqn - equation
 + rem - remark
 + fac - fact
 + mre - main result
-+ fig - figure
-+ exm - example
-+ sol - solution
+
+### Appendix
+
++ prf - proof
++ bib - bibliography (all references)
 + jor - journal for solutions in progress
-+ ref - reference
-+ ftn - footnote
-+ Qa_ - unanswered question
-+ QA_ - question with answer
 
 Layout
 ------

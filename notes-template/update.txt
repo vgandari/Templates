@@ -1,0 +1,7 @@
+make table wrap
+add example/algorithm boxes
+change title, math font
+code listings
+page numbering
+
+CREATE EXAMPLE TEMPLATE

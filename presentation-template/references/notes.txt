@@ -1,0 +1,6 @@
+NICE TO HAVE
+============
+
+page: #/##
+progressbar end at references, halt before backup slides
+Body font (Helvetica)
