@@ -1,0 +1,9 @@
+%For books or other large texts
+\usepackage{catchfilebetweentags}
+...
+\ExecuteMetaData[file.tex]{tag}
+where the contents of the external file is surrounded by the "tags":
+
+%<*tag>
+...
+%</tag>

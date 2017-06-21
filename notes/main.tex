@@ -5,7 +5,20 @@
 %This will allow for repetition of file names that already exist in the template.
 %Keep prefixes to make naming section files more flexible.
 
-\input{./doc_notes_header.tex}
+\documentclass[11pt,a4paper,BCOR12mm, headexclude, footexclude, twoside, openright]{scrartcl}
+\usepackage[scaled]{helvet}
+\usepackage[british]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{ifthen}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{sfmath}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{sectsty}
+
 \input{./doc_heading_info.tex}
 \input{./doc_formatting.tex}
 

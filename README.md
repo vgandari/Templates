@@ -20,6 +20,7 @@ File Prefixes:
 
 ### Section/Layout (Main Matter)
 
++ abs - abstract
 + chp - chapter
 + sec - section
 + sub - subsction
@@ -29,7 +30,7 @@ File Prefixes:
 
 ### Content
 
-
++ doc - document info (headings, etc)
 + ftn - footnote
 + sdn - sidenote (depending on layout?)
 + lis - list
@@ -39,10 +40,16 @@ File Prefixes:
 + frm - presentation slide (frame)
 + exm - example
 
-
 + ref - reference (to be cited)
 + Qa_ - unanswered question
 + QA_ - question with answer
+
+### Troubleshooting
+
++ sym - symptom
++ cau - cause
++ res - resolution
+
 
 ### Math
 

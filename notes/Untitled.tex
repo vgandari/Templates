@@ -1,0 +1,100 @@
+%\title{Notes Template}
+
+%GUDELINES
+%Create a folder for each problem with modules for each problem.
+%This will allow for repetition of file names that already exist in the template.
+%Keep prefixes to make naming section files more flexible.
+
+
+\documentclass[11pt,a4paper,BCOR12mm, headexclude, footexclude, twoside, openright]{scrartcl} 
+\usepackage[scaled]{helvet}
+\usepackage[british]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{ifthen}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{sfmath}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{sectsty}
+%\KOMAoptions{optionenliste}
+%\KOMAoptions{Option}{Werteliste}
+\newcommand{\firstname}{Victor }
+\newcommand{\surname}{Gandarillas}
+\newcommand{\idno}{ID NUMBER}
+\newcommand{\institution}{Inst}
+\newcommand{\department}{Dept}
+\newcommand{\course}{C.0 Course}
+\newcommand{\lab}{}
+%\newcommand{\lab}{, Lab}
+\newcommand{\firstdate}{2015.08.12}
+\newcommand{\lastdate}{2015.08.12}
+\newcommand{\topic}{Pigs and Jet Packs}
+\newcommand{\subtopic}{Pigs on the Ground (pre-flight)}
+\newcommand{\doctype}{TITLE}
+%\newcommand{\doctype}{Problem Set \#1}
+%\newcommand{\doctype}{Lecture Notes}
+%\newcommand{\doctype}{Lab Notes}
+%\newcommand{\doctype}{Solution Set}
+\newcommand{\duedate}{Due 2015.09.15}%leave blank for notes
+
+\addtokomafont{caption}{\small}
+%\setkomafont{descriptionlabel}{\normalfont
+%	\bfseries}
+\setkomafont{captionlabel}{\normalfont
+	\bfseries}
+\let\oldtabular\tabular
+\renewcommand{\tabular}{\sffamily\oldtabular}
+\KOMAoptions{abstract=true}
+%\setkomafont{footnote}{\sffamily}
+%\KOMAoptions{twoside=true}
+%\KOMAoptions{headsepline=true}
+%\KOMAoptions{footsepline=true}
+\renewcommand\familydefault{\sfdefault}
+\renewcommand{\arraystretch}{1.1}
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}}
+\setlength{\textheight}{230mm}
+\allsectionsfont{\centering \normalfont\scshape}
+\let\tmp\oddsidemargin
+\let\oddsidemargin\evensidemargin
+\let\evensidemargin\tmp
+\reversemarginpar
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+\setlength\parindent{0pt}
+
+
+\begin{document}
+%\sffamily
+\fancypagestyle{plain}
+{%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0.5pt}
+  \fancyhf{}%
+  \fancyfoot[R]{\emph{\footnotesize Page \thepage\ of \pageref{LastPage}}}%
+  \fancyfoot[C]{\emph{\footnotesize \firstname \surname}\\ \emph{\footnotesize\idno}}%
+}
+
+\thispagestyle{plain}
+
+\titlehead
+{
+	\institution\\
+    \department\lab\hfill\firstdate\\
+    \course\hfill\lastdate
+}
+\subject{\vspace{-1ex} \horrule{2pt}\\[0.15cm] {\textsc{\texttt{\topic}}}}
+\title{\doctype\\\textsc{\duedate}\\[0.5cm]}
+\subtitle{\textsc{\texttt{\subtopic}}\\\horrule{2pt}\\[0.5cm]}
+\author{\bfseries{\firstname\surname}}%\vspace{-1ex}}
+\date{} %dates already printed, make blank line after author
+\maketitle
+
+Hello!
+
+\end{document}
